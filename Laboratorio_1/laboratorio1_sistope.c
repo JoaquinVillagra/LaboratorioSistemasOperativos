@@ -100,7 +100,7 @@ int main(int argc, char **argv)
 	        break;
 	      case 'D':
 	        imprime =  atoi(optarg);
-	     	if(imprime!=0 || imprime!=1)
+	     	if(imprime!=0 && imprime!=1)
 	     		abort();
 	        break;
 	      case '?':
@@ -172,7 +172,7 @@ int main(int argc, char **argv)
 				while(i < H)
 				{
 					imprimirMatriz(p[i].fragmentoMatrizAsignado, p[i].distancia_enFilas, N);
-					printf("---------\n");
+					//printf("---------\n");
 					i=i+1;
 				}
 			}
